@@ -5,8 +5,14 @@
 	<meta charset="UTF-8" />
 	<title> 我的第一个HTML文档
 	</title>
-	<style>
-		body {
+	<style type="text/css">
+		body,
+		div,
+		ul,
+		li {
+			margin;
+			0;
+			padding: 0;
 			background-color: rgb(58, 58, 32);
 		}
 
@@ -21,7 +27,26 @@
 				blue
 			}
 
+			#images {
+				display: block;
+				width: 1176px;
+				height: 580;
+				float: flex;
+			}
+
 			;
+		}
+
+		#content {
+			overflow: hidden;
+			background: #EAEAEA;
+			font-size: 12px;
+			line-height: 24px;
+		}
+
+		.clear {
+			clear: both;
+			/* 在Chrome中，让后续的块重启一行 */
 		}
 	</style>
 </head>
@@ -32,19 +57,13 @@
 	<header>header</header>
 	<section>section 1</section>
 	<section>section 2</section>
-	<div>骆</div>
-	<div>Jian</div>
-	<div>Zhi</div>
-	<div><img src="img/pay_with_wish.jpg" alt="" /></div>
-
-	<!-- <head>
-		<h1>第一个标题</h1>
-		<h2>第二个标题</h2>
-		<h3>第三个标题</h3>
-		<ul>yes I know</ul>
-		<ul>hello </ul>
-	</head> -->
-
-</body>
+	<div id="images"><img src="img/pay_with_wish.jpg" alt="" /></div>
+	<div id="nav">
+		<ul>
+			<li><a href="#">项目</a></li>
+			<li><a href="#">经历</a></li>
+			<li><a href="#">技术 </a> </li>
+		</ul>
+	</div>
 
 </html>
